@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ripple_recycler"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="aaasdasdasdasdasdaaa" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name"
+                        android:ellipsize="end"
+                        android:paddingTop="4dp"
+                        android:text="adasdasdasjdfhaslkjfdhasjdhfaksjdhfaklsjhdflkasjhdflkasjhdfkajshdflkajshdflkjahsdfkjhasdlkfjhaskldfjhaskldfjhaslkdfjhasdlkfjhaskjdfhaskljdfhsakjdfhaskljdfhdasdasd" />
+
+                    <!-- statistic -->
+                    <LinearLayout
+                        android:id="@+id/ll_statistic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_info"
+                        android:paddingTop="16dp">
+
+
+                        <!-- Fork Info -->
+                        <LinearLayout
+                            android:id="@+id/ll_forks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ic_fork"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3dp"
+                                android:src="@mipmap/fork" />
+
+                            <TextView
+                                android:id="@+id/fork_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15" />
+                        </LinearLayout>
+
+
+                        <!-- Star Info -->
+                        <LinearLayout
+                            android:id="@+id/ll_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp">
+
+                            <ImageView
+                                android:id="@+id/ic_star"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="3dp"
+                                android:src="@mipmap/star" />
+
+                            <TextView
+                                android:id="@+id/star_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- End of Statistic -->
+
+                </LinearLayout>
+                <!-- End of ll Info -->
+
+
+                <LinearLayout
+                    android:id="@+id/ll_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/ll_info"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/ic_user"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="aaaaaa" />
+
+                    <TextView
+                        android:id="@+id/user_last_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- End of ll Info -->
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

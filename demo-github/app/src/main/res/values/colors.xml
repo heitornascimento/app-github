@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#29B6F6</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="textColor">#ffffff</color>
+    <color name="colorRipple">#1E88E5</color>
+    <color name="bgCities">#F5F5F5</color>
+    <color name="bgCircle">#0277BD</color>
+
+    <color name="colorAccent">#FF4081</color>
+</resources>

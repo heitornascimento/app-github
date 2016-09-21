@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cl.com.br.github">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".GithubApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_github"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Github">
+        <activity android:name=".view.RepositoryListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".endpoint.GithubEndpoint"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.PullRequestActivity"
+            android:label="@string/title_activity_pull_request"
+            android:theme="@style/Github">
+            <intent-filter>
+                <action android:name="PULL_REQUEST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
